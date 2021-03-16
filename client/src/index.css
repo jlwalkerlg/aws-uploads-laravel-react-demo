@@ -1,0 +1,81 @@
+img {
+  max-width: 100%;
+}
+
+.dropzone {
+  border: 2px dashed #333;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  height: auto;
+  padding: 1em 3em;
+  border-radius: 4px;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.dropzone:hover {
+  border: 2px dashed rgb(121, 57, 241);
+  background-color: #fcfcfc;
+}
+
+.gallery {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+}
+
+.gallery-image-footer {
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: rgba(216, 0, 0, 0.473);
+}
+
+.no-decor {
+  text-decoration: none !important;
+}
+
+.error-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-page-code {
+  border-right: 2px solid;
+  font-size: 26px;
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+
+.error-page-message {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+progress.progress::-webkit-progress-value {
+  transition: width 0.5s ease;
+}
